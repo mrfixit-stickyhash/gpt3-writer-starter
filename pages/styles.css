@@ -10,13 +10,27 @@ body {
     display: flex;
     place-content: center flex-start;
     align-items: center;
-    background-color: rgb(0, 0, 0);
+    background-image: url("https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/98f59b65-645f-45a1-a9bd-27764ed97c4d");
+    background-size: cover;
+    animation: background 30s linear infinite;
     flex-flow: column nowrap;
     gap: 10px;
     height: 100vh;
     overflow: auto;
     padding: 0px;
     position: relative;
+}
+
+@keyframes background {
+  0% {
+    background-image: url("https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/98f59b65-645f-45a1-a9bd-27764ed97c4d");
+  }
+  50% {
+    background-image: url("https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/f2a80445-1998-410b-afbf-6e309097b46e");
+  }
+  100% {
+    background-image: url("https://lexica-serve-encoded-images2.sharif.workers.dev/full_jpg/98f59b65-645f-45a1-a9bd-27764ed97c4d");
+  }
 }
 
 .container {
@@ -80,7 +94,7 @@ body {
 
 .prompt-box {
     border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgb(3, 0, 0);
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
@@ -108,7 +122,7 @@ body {
     letter-spacing: 0px;
     line-height: 1.6em;
     text-align: start;
-    color: rgba(255, 255, 255, 0.75);
+    color: rgba(3, 1, 1, 0.75);
     text-decoration: none;
     text-transform: none;
 }
@@ -166,13 +180,13 @@ textarea {
 }
 
 .or p {
-    color: rgba(255, 255, 255, 0.25)
+    color: rgb(6, 1, 1)
 }
 
 .generate-button {
     place-content: flex-start;
     align-items: flex-start;
-    background-color: rgb(255, 79, 18);
+    background-color: rgb(81, 21, 1);
     border-radius: 100px;
     display: flex;
     flex: 0 0 auto;
@@ -186,6 +200,16 @@ textarea {
     width: min-content;
     will-change: transform;
     cursor: pointer;
+    animation: circle 5s linear infinite;
+}
+
+@keyframes circle {
+    from {
+        border-radius: 0;
+    }
+    to {
+        border-radius: 100px;
+    }
 }
 
 .generate {
@@ -220,7 +244,7 @@ textarea {
 
 .badge-container a {
     border-bottom-width: 1px;
-    border-color: rgba(255, 255, 255, 0.1);
+    border-color: rgb(12, 2, 2);
     border-left-width: 1px;
     border-right-width: 1px;
     border-style: solid;
