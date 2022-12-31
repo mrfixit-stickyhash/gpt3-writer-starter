@@ -33,7 +33,7 @@ const Home = () => {
   return (
     <div className="root">
       <Head>
-        <title>GPT-3 Writer | buildspace</title>
+        <title>Smart Contract | Audit</title>
       </Head>
       <div className="container">
         <div className="header">
@@ -78,11 +78,12 @@ should not be used as investment advice.</h2>
     </div>
   </div>
 )}
+
         </div>
       </div>
       <div className="badge-container grow">
         <a
-          href="https://buildspace.so/builds/ai-writer"
+          href=""
           target="_blank"
           rel="noreferrer"
         >
